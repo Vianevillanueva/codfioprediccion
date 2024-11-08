@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Historial Médico</title>
+    <link rel="stylesheet" href="registrar_historial.css"> <!-- Archivo CSS externo -->
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar Historial Médico</h1>
+        <form action="procesar_historial.php" method="POST">
+            <label for="datos_completos">Datos Completos:</label>
+            <input type="text" id="datos_completos" name="datos_completos" placeholder="Ejemplo: Vianeth Mallma Villanueva" required>
+
+            <label for="antecedentes">Antecedentes Médicos:</label>
+            <textarea id="antecedentes" name="antecedentes" placeholder="Describe si has tenido síntomas comunes de forma recurrente, como fiebre, dolor de cabeza, etc." required></textarea>
+
+            <button type="submit">Registrar Historial</button>
+        </form>
+    </div>
+</body>
+</html>
